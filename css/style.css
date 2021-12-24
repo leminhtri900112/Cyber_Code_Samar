@@ -2,6 +2,7 @@
   --color-header-text: #070120;
   --color-text: #636363;
   --color-primary: #f55f8d;
+  --color-primarySecond: #feeff3;
   --gradient: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
 }
 
@@ -863,6 +864,172 @@ header {
 }
 
 /* end plan */
+
+/* start blog */
+.blog {
+  /* padding: 150px 0; */
+  background-image: url(../img/Samar/bg16.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.blog__title h6 {
+  color: var(--color-primary);
+  font-size: 2.2rem;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.blog__title h2 {
+  font-size: 6rem;
+  font-weight: 800;
+  color: var(--color-header-text);
+  font-family: "Poppins";
+}
+.blog__content {
+  padding: 30px 0;
+}
+
+.blog__content__item {
+  background-color: var(--color-primarySecond);
+  border-radius: 10px;
+}
+
+.blog__content__item__img img {
+  display: block;
+  border-radius: 10px;
+}
+
+.blog__content__item__info {
+  text-align: left;
+  padding: 25px 15px 20px 15px;
+  line-height: 1.4;
+  position: relative;
+}
+
+.blog__content__item__info h4 a {
+  text-decoration: none;
+  font-size: 2.6rem;
+  color: #262626;
+  font-family: "Poppins";
+  line-height: 1.4;
+}
+
+.blog__content__item__info p {
+  color: var(--color-text);
+  font-size: 1.6rem;
+  padding: 10px 0 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.blog__content__item__info ul {
+  list-style: none;
+  display: flex;
+  padding-top: 20px;
+}
+
+.blog__info__date {
+  position: absolute;
+  left: 15px;
+  top: -20px;
+  font-size: 1.4rem;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  background-image: var(--gradient);
+  background-size: 200%;
+  border-radius: 4px;
+}
+
+.blog__info__author,
+.blog__info__comment {
+  font-size: 1.4rem;
+  color: var(--color-text);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.blog__info__author i,
+.blog__info__comment i {
+  font-size: 2.2rem;
+  color: var(--color-primary);
+  margin-top: -2px;
+  margin-right: 4px;
+}
+
+.blog__info__author a,
+.blog__info__comment a {
+  text-decoration: none;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  margin-left: 4px;
+}
+
+.blog__info__comment a {
+  color: var(--color-text);
+}
+
+.blog__info__comment a span {
+  margin: 0 5px;
+}
+
+/* end blog */
+/* start logo */
+.logo {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.logo__item {
+  position: relative;
+  height: 100px;
+  margin: 30px 15px;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.logo__item img {
+  z-index: 10;
+}
+
+.logo__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: var(--gradient);
+  background-size: 200%;
+  opacity: 0;
+  border-radius: 10px;
+  box-shadow: 5px 0 30px 0 #f55f8d80;
+
+  transition: all 1s;
+}
+
+.logo .logo__item .logo__img__hover {
+  display: none;
+}
+
+.logo__item:hover::after {
+  opacity: 1;
+}
+.logo__item:hover .logo__img__hover {
+  display: block;
+}
+
+.logo__item:hover .logo__img__main {
+  display: none;
+}
+
+/* end logo */
 /* animation */
 @keyframes upToDown {
   49% {
