@@ -461,6 +461,10 @@ header {
   z-index: 1;
 }
 
+.feature__content__item a {
+  text-decoration: none;
+}
+
 .feature__content__item:hover .feature__content__para::before {
   opacity: 1;
 }
