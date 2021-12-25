@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Samar</title>
-    <!-- scroll -->
-
+    <link rel="icon" type="image/png" href="./img/Samar/favicon.png" />
     <!-- font icon -->
     <link
       rel="stylesheet"
@@ -46,6 +45,13 @@
       rel="stylesheet"
       href="./js/owlcarousel/assets/owl.theme.default.min.css"
     />
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://samar.dexignzone.com/xhtml/vendor/swiper/css/swiper.min.css"
+    />
+    <link rel="stylesheet" href="./js/swiper/swiper.css" />
 
     <!-- main -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -551,7 +557,96 @@
         </div>
       </div>
     </div>
-    <div class="testimonial"></div>
+    <div class="testimonial">
+      <div class="container testimonial__container">
+        <div class="testimonial__title">
+          <h6>Testimonial</h6>
+          <h2>What Our Clients Say’s</h2>
+        </div>
+        <div class="testimonial-content">
+          <!-- Swiper -->
+          <div class="swiper-container testimonial-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-pic">
+                  <img
+                    src="https://samar.dexignzone.com/xhtml/images/testimonials/pic1.jpg"
+                    alt=""
+                  />
+                  <div class="shape-bx"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-pic">
+                  <img
+                    src="https://samar.dexignzone.com/xhtml/images/testimonials/pic2.jpg"
+                    alt=""
+                  />
+                  <div class="shape-bx"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-pic">
+                  <img
+                    src="https://samar.dexignzone.com/xhtml/images/testimonials/pic3.jpg"
+                    alt=""
+                  />
+                  <div class="shape-bx"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-container testimonial-comment">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-text">
+                  <strong class="testimonial-name">Cak Dikin 1</strong>
+                  <span class="testimonial-position text-primary m-b20"
+                    >CEO &amp; Founder
+                  </span>
+                  <p>
+                    Duis feugiat est tincidunt ligula maximus convallis. Aenean
+                    ultricies, mi non vestibulum auctor, erat tortor porttitor
+                    ipsum, nec dictum tortor sem eget nunc. Etiam sed facilisis
+                    erat.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-text">
+                  <strong class="testimonial-name">Cak Dikin 2</strong>
+                  <span class="testimonial-position text-primary m-b20"
+                    >CEO &amp; Founder
+                  </span>
+                  <p>
+                    Duis feugiat est tincidunt ligula maximus convallis. Aenean
+                    ultricies, mi non vestibulum auctor, erat tortor porttitor
+                    ipsum, nec dictum tortor sem eget nunc. Etiam sed facilisis
+                    erat.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-text">
+                  <strong class="testimonial-name">Cak Dikin 3</strong>
+                  <span class="testimonial-position text-primary m-b20"
+                    >CEO &amp; Founder
+                  </span>
+                  <p>
+                    Duis feugiat est tincidunt ligula maximus convallis. Aenean
+                    ultricies, mi non vestibulum auctor, erat tortor porttitor
+                    ipsum, nec dictum tortor sem eget nunc. Etiam sed facilisis
+                    erat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="blog">
       <div class="container blog__container">
         <div class="blog__title">
@@ -1131,6 +1226,10 @@
         });
       });
     </script>
+
+    <!-- swiper -->
+    <script src="https://samar.dexignzone.com/xhtml/vendor/swiper/js/swiper.min.js"></script>
+    <script src="./js/swiper/swiper.js"></script>
     <!-- scroll -->
     <script>
       //Get the button
@@ -1175,7 +1274,7 @@
         } else {
           document.getElementById("header").style.backgroundColor =
             "transparent";
-          document.getElementById("header").style.height = "139px";
+          document.getElementById("header").style.height = "140px";
         }
       }
     </script>
