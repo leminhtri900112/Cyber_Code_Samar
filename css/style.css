@@ -38,8 +38,12 @@ html {
 
 /* start header */
 header {
-  position: absolute;
+  position: fixed;
   width: 100%;
+  z-index: 100;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
 }
 .header__container {
   display: flex;

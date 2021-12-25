@@ -51,7 +51,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="container header__container">
         <div class="header__logo">
           <a href="#">
@@ -1156,6 +1156,27 @@
       function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <!-- header scroll -->
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 50 ||
+          document.documentElement.scrollTop > 50
+        ) {
+          document.getElementById("header").style.backgroundColor = "#fff";
+          document.getElementById("header").style.height = "100px";
+        } else {
+          document.getElementById("header").style.backgroundColor =
+            "transparent";
+          document.getElementById("header").style.height = "139px";
+        }
       }
     </script>
   </body>
